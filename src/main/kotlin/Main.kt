@@ -2,16 +2,18 @@ fun main() {
 getMultiples(20,)
     getMultiples(19)
     getMultiples(16)
-
+get = CurrentAccount()
+    gets = SavingAccount()
 }
 //Create a function that prints out multiples of 6 and 8 between 1 and 1000. For
 //multiples of both 6 and 8 it should print out “Bingo!”
 
 fun getMultiples(num:Int){
 
-    var item = 0;
-    for (item in num ){
-        if (item %6==0 || %8==0){
+    var item = 1;
+    var num = 1000
+    for (item in  1..1000 ){
+        if (item %6==0|| item %8==0){
             println("Bingo")
         }
         else if (item %6==0){
@@ -84,6 +86,10 @@ fun getValues(word:String):String{
 
         override fun details(accountnumber: Int, balance: Double): String {
             return super.details(accountnumber, balance)
+        }
+        fun withdrawalAcoount(){
+            var withdraw = withdrawal*12
+            println(withdraw)
         }
     }
 
